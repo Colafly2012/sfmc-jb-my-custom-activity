@@ -4,6 +4,9 @@ dist
 modules/discount-code/dist
 modules/discount-redemption-split/dist
 
+# WORKSPACE FILES
+*.code-workspace
+
 # NODE/NPM/GRUNT
 node_modules
 npm-debug.log
