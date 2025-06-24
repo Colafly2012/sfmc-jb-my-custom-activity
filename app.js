@@ -20,6 +20,10 @@ submodules.forEach((sm) => sm(app, {
     rootDirectory: __dirname,
 }));
 
+// 如果有 push-mobile 路由模块，添加如下代码
+const pushMobileRouter = require('./push-mobile/app/app');
+app.use('/push-mobile', pushMobileRouter);
+
 app.listen(app.get('port'), function() {
     console.log(`Express is running at localhost: ${app.get('port')}`);
 });
