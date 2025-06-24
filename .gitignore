@@ -45,3 +45,4 @@ dist/cloudeditor-cdn.*
 .idea/vcs.xml
 .idea/workspace.xml
 >>>>>>> master
+.vscode/ssjs-setup.json
