@@ -55,11 +55,13 @@ router.post('/v2/push', (req, res) => {
         });
     }
 
-    return res.status(200).json({
+    const response = {
         success,
         fail,
         results
-    });
+    };
+    console.log('Push Response:', JSON.stringify(response, null, 2));
+    return res.status(200).json(response);
 });
 
 module.exports = router;
